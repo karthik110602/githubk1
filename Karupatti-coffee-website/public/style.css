@@ -1,0 +1,195 @@
+ @import url('https://fonts.cdnfonts.com/css/lt-funk');
+
+*{
+    font-family:'LT Funk';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+#home{
+    background-image: url(./Assests/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#para{
+    background-image: url(./Assests/Layer\ 6.png);
+    background-repeat: no-repeat;
+    background-size: 1500px 1500px;
+    background-position-y: -500px;
+    background-position-x: -150px;
+    border: 2px solid #530400;
+    border-radius: 30px;
+    padding: 15px;
+}
+#btn{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px rgba(254, 195, 0, 0);
+    transition: 0.3s ease;
+    transform: scale(1);
+
+
+}
+#btn:hover{
+    box-shadow: 0px 0px 25px rgb(247, 255, 1);
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+
+.nav-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 8px;
+        color: #530400;
+        transition: all 0.2s ease-in-out;
+        
+}
+.nav-items:hover .icons{
+        bottom: 5px;
+        opacity: 1;
+        filter: drop-shadow(0px 0px 20px rgb(159, 0, 0)) ;
+        transition: all 0.3s ease-in-out;
+       
+}
+.icons{
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+    right: 8px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.gradient{
+        opacity: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top, black, transparent);
+        border-radius: 30px;
+
+}
+
+.pname{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+}
+
+.card:hover .pname {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all 0.3s ease;
+}
+
+
+.social{
+        box-shadow: 0px 0px 0px 0px transparent;
+        transform: scale(1);
+        transition: all 0.3s ease;
+}
+
+.social:hover{
+        box-shadow: 0px 0px 20px rgba(130, 0, 0, 0.9);
+        background-color: #ffe600;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+}
+.social:hover i{
+        color: #530400;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+}
+.about-img{
+        filter: drop-shadow(0px 0px 20px rgba(130, 0, 0, 0.9));
+}
+.input{
+        border-bottom: 2px solid #530400;
+        border-radius: 20px;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        transition: all 0.3s ease;
+}
+label{
+        position: relative;
+        right: 110px;
+}
+#message{
+        border-bottom: 2px solid #530400;
+        border-radius: 20px;
+        padding: 10px;
+        width: 300px;
+        margin: 10px;
+        transition: all 0.3s ease;
+}
+#contact{
+        background-image: url(./Assests/contact-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        min-height: 100vh;
+        z-index: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+}
+.contact-social{
+        width: 500px;
+        border-radius: 30px;
+        border-right: 4px solid #e7cf00;
+        border-bottom: 4px solid #e7cf00;
+        height: 300px;
+        background-color: #530400;
+        position: absolute;
+        right: 200px;
+        top: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+#contact-nav:hover{
+        background-color: #ffe600;
+        color: #530400;
+        border: 2px solid #530400;
+        transition: all 0.3s ease;
+        
+}
+.marquee {
+        width: 100%; /* Full width */
+        height: 30px;
+        overflow: hidden; /* Hide overflow */
+        position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    animation: scroll-right 20s linear infinite; /* 10s scrolling loop */
+}
+
+@keyframes scroll-right {
+    from {
+        transform: translateX(100%); /* Start from the right */
+    }
+    to {
+        transform: translateX(-100%); /* Scroll to the left */
+    }
+}
+  
+footer{
+        margin: 0;
+        padding: 0;
+}
+
+
+  
